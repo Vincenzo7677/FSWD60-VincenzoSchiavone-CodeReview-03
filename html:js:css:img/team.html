@@ -1,0 +1,116 @@
+<!DOCTYPE html>  <!---This is the HTML sheet for my 3rd. CodeReview--->
+				 <!----Created by Vincenzo Schiavone Date: 26/01/2019--->
+<html>
+<head>
+	<meta charset="utf-8" lang="en">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>insurance CF - Team</title>
+</head>
+
+<body>
+
+		<div id="wrapper">
+	
+<header>
+		<div class="logo">
+			<img src="logo.png" id="logo1" alt="Logo" title="Logo">
+		</div>
+		<div class="banner">
+			<a href="https://www.codefactory.wien" target="_blank"><img src="banner.png" id="banner1" alt="Banner" title="www.codefactory.wien"></a>
+		</div>
+		
+</header>
+
+<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+			</ul>
+</nav>
+
+<main>
+			
+			<h1 class="subtitle">Team</h1>
+
+		<div id="inputarea">
+			
+			
+		<script type="text/javascript" src="review3.json"></script>
+
+<script>
+		//Data = JSON (teamMembers);
+		document.getElementById('inputarea').innerHTML = 
+		"<div id='pic1'><h1>Our Team Members</h1>";
+
+		for(i = 0; i < teamMembers.length; i++){
+			
+		document.getElementById('inputarea').innerHTML += 
+		`<div class="member">
+			<div class="namen"> 
+				<p>${teamMembers[i].Name}</p>
+				<p>${teamMembers[i].email}</>
+			</div>
+			
+				<div class="bild">
+					<img src='${teamMembers[i].image}'>
+				</div>
+			</div> `
+		}
+
+</script>
+		</div>  <!---end input area--->
+
+		<div class="greycont">
+			<h1>Un-complicating car coverage</h1>
+			<h3>Understanding your coverage options shouldn't be so hard.<br>We'll guide you through available coverage types,<br>starting with who and what is covered.</h3>
+		</div>
+				<!---start bottom 2 box inside--->
+		<div class="infoboxes">
+	
+		<div class="leftbox">
+			<h3>What comes standard</h3>
+			<p>The coverage you need</p>
+				<ul>
+					<li><span>✔</span> Bodily Injury Liability</li>
+					<li><span>✔</span>Property Damage</li>
+					<li><span>✔</span>Medical Payments</li>
+				</ul>
+			
+			<h3>Earned Benefits</h3>
+			<p>12-month rate guarantee | 24/7 customer service | Lifetime repair guarantee</p>
+		</div>
+
+		<div class="rightbox">
+			<h3>What comes standard</h3>
+			<p>For more peace of mind</p>
+				<ul>
+					<li><span>✔</span>Better Car Replacement</li>
+					<li><span>✔</span>Towing & Labor</li>
+					<li><span>✔</span>Rental Car Coverage</li>
+				</ul>
+			
+			<h3>Earned Benefits</h3>
+			<p>Accident forgiveness<sup>1</sup> | New Car Replacement<sup>TM</sup></p>
+		</div>
+
+	
+	</div>			<!---bottom page--->
+</main>
+
+<footer>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Team</a></li>
+			</ul>
+		<div class="logofooter">
+			<img src="logo-inv.png" alt="Logo" title="Logo.png">
+		</div>
+			<p>Vincenzo Schiavone - CodeFactory 2019</p>
+
+</footer>
+
+</div>   <!---end wrapper--->
+
+</body>
+</html>
