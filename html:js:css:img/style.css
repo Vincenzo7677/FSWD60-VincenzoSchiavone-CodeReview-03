@@ -137,13 +137,26 @@ span{ /*--This is only for checked signs*/
 }
 #inputarea h1{
 	font-size: 40px;
-	padding-top: 10%;
+	padding-top: 5%;
 	color: grey;
 }
 
-.bild img{
-	border-radius: 50%;
+.bild img{ 	/*this is for the json files*/
+	border: 1px solid black;
+	border-radius: 40%;
+
 }
+.member{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 40%;
+
+}					/*end of json part*/
 
 .nameage{
 	display: flex;
