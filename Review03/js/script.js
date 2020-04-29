@@ -6,6 +6,7 @@ const calcInsurance = (name, age, horsepower) => {
     let austria = Math.floor(horsepower * 100 / age + 50);
     let hungary = Math.floor(horsepower * 120 / age + 100);
     let greece = Math.floor(horsepower * 150 / (age + 3) + 50);
+   
     if (countries === "Austria") {
         document.getElementById('result').innerHTML = name + " your inssurance costs " + austria + "€";
     }
@@ -25,14 +26,3 @@ let button = document.getElementById('btn').addEventListener('click', calcInsura
 
 
 
-//Data = JSON (teamMembers);
-document.getElementById('team').innerHTML = 
-"<tr><th>Name</th><th>Email</th><th>Image</th></tr>";
-
-for(i = 0; i < teamMembers.length; i++){
-    
-document.getElementById('team').innerHTML += 
-"<tr><td>"+teamMembers[i].Name+"</td>"+
-    "<td>"+teamMembers[i].email+"</td>"+
-    "<td><img src='"+teamMembers[i].image+"'</td></tr>";
-}
