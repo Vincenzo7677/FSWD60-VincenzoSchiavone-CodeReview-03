@@ -6,7 +6,12 @@ const calcInsurance = (name, age, horsepower) => {
     let austria = Math.floor(horsepower * 100 / age + 50);
     let hungary = Math.floor(horsepower * 120 / age + 100);
     let greece = Math.floor(horsepower * 150 / (age + 3) + 50);
-   
+    
+    if (age < 18) {
+        age = alert("Sorry, to use our insurance you must be 18 years old!");
+        location.reload()
+        return
+    }
     if (countries === "Austria") {
         document.getElementById('result').innerHTML = name + " your inssurance costs " + austria + "€";
     }
