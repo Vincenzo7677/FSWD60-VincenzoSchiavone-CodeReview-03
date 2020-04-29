@@ -8,8 +8,8 @@ const calcInsurance = (name, age, horsepower) => {
     let greece = Math.floor(horsepower * 150 / (age + 3) + 50);
     
     if (age < 18) {
-        age = alert("Sorry, to use our insurance you must be 18 years old!");
-        location.reload()
+        age = alert("Please add your age!");
+        location.reload(age)
         return
     }
     if (countries === "Austria") {
