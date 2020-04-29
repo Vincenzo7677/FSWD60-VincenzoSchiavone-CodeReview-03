@@ -1,0 +1,16 @@
+
+
+teamMembers =[{
+"Name":"Bonnie", 
+"email":"Bonniean.clyde@gmail.com",
+"image":"img/drawn.jpg"
+},
+{"Name":"Roady",
+"email":"Road.runner@icloud.com",
+"image":"img/smoker.jpg"
+},
+{"Name":"Clyde", 
+"email":"Clyde.bonnie@gmail.com",
+"image":"img/anonym.jpg"
+}]
+

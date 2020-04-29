@@ -84,7 +84,9 @@ nav li a:hover{
 	color: black;
 
 }
-
+table {
+	font-size: 2em;
+}
 main{
 	display: flex;
 	flex-direction: row;
@@ -135,6 +137,7 @@ span{ /*--This is only for checked signs*/
 	margin: auto;
 	border: 1px solid grey;
 }
+
 .inputarea h1{
 	font-size: 40px;
 	padding-top: 10%;
@@ -144,7 +147,7 @@ span{ /*--This is only for checked signs*/
 .nameage{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap; 
 	margin-top: 10%;
 	margin-bottom: 10%;
@@ -156,6 +159,7 @@ span{ /*--This is only for checked signs*/
 	flex-wrap: wrap; 
 	margin: auto;
 	width: 100%;
+	padding-bottom: 100px;
 }
 
 .button{
@@ -165,6 +169,7 @@ span{ /*--This is only for checked signs*/
 	justify-content: center;
 	width: 80%;
 	margin: auto;
+	padding: 0;
 }
 
 input{
@@ -191,9 +196,6 @@ button{
 	font-size: 30px;
 }
 
-.textResult h1{
-	color: brown;
-}
 
 			/*this query let the grey part disappear*/
 @media screen and (max-width: 480px){
@@ -211,6 +213,7 @@ button{
 	justify-content: center;
 	text-align: center;
 	background-color: grey;
+	margin-top: 100px;
 }
 .greycont h1,h3{
 	padding-left: 10px;

@@ -20,3 +20,19 @@ const calcInsurance = (name, age, horsepower) => {
 }
 
 let button = document.getElementById('btn').addEventListener('click', calcInsurance, false);
+
+
+
+
+
+//Data = JSON (teamMembers);
+document.getElementById('team').innerHTML = 
+"<tr><th>Name</th><th>Email</th><th>Image</th></tr>";
+
+for(i = 0; i < teamMembers.length; i++){
+    
+document.getElementById('team').innerHTML += 
+"<tr><td>"+teamMembers[i].Name+"</td>"+
+    "<td>"+teamMembers[i].email+"</td>"+
+    "<td><img src='"+teamMembers[i].image+"'</td></tr>";
+}
