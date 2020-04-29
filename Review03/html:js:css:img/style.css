@@ -191,6 +191,10 @@ button{
 	font-size: 30px;
 }
 
+.textResult h1{
+	color: brown;
+}
+
 			/*this query let the grey part disappear*/
 @media screen and (max-width: 480px){
 	main .greycont{
